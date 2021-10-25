@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <title>Document</title>
+</head>
+  <!-- 1.I have to instal this npm install --save-dev html5-qrcode 
+  2.  I then need to include this in the library 
+  <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+3. after that is set up I need to initlizie in JS
+INFO FROM https://blog.minhazav.dev/QR-and-barcode-scanner-using-html-and-javascript/ -->
+<body>
+  <p> You are on your way to earning! </p>
+<ol> 
+First you scan the QR code at the designated area. 
+Then you scan the item you are recyling.
+then press complete  
+Voila you just earned some points
+Thank you for recycling 
+</ol>
+ 
+<div class="header">
+  <h1>LETS RECYCLE AND EARN</h1>
+  <p>It Is Now The Time </p>
+</div>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">about</a>
+    <a href="#sponser">sponser</a>
+    <a href="#contact">contact</a>
+  </div>
+
+<section> 
+<div id="container">
+  <h1>QR Code Scanner</h1>
+  <a id="btn-scan-qr">
+  <a/>
+  <button id="qrScan"> QR Code Scanner </button>
+  <canvas hidden="" id="qr-canvas"></canvas>
+  <div id="qr-result" hidden="">
+      <b>Data:</b> <span id="outputData"></span>
+  </div>
+</div>
+</section>
+
+
+
+  <section> 
+    <div id="container">
+      <h1>Bar Code Scanner</h1>
+      <a id="btn-scan-barcode">
+      <a/>
+      <button id="barCdScan"> Bar Code Scanner </button>
+      <canvas hidden="" id="qr-canvas"></canvas>
+      <div id=barcdode-result" hidden="">
+          <b>Data:</b> <span id="outputData"></span>
+      </div>
+    </div>
+
+    <button> complete </button>
+    </section>
+   
+    
+
+
+
+
+<script src="./src/qrCodeScanner.js"></script>
+
+
+  <script src='main.js'></script>
+  <!-- this site can he/p out
+  https://minhazav.medium.com/qr-code-scanner-using-html-and-javascript-3895a0c110cd -->
+
+  <!-- https://github.com/mebjas/html5-qrcode -->
+  <!-- https://github.com/zxing-js/library -->
+   <!-- this site explains barcode scan https://www.dynamsoft.com/codepool/html5-barcode-reader-javascript-webassembly.html -->
+</body>
+</html>
